@@ -1,0 +1,5 @@
+arr = np.array(['apple', 'banana', 'cherry', 'date'])
+
+# Find index of 'banana'
+index = np.where(arr == 'banana')
+print(index[0][0])  # Output: 1
