@@ -1,0 +1,6 @@
+def decimal_to_binary(decimal):
+    if decimal >= 1:
+        decimal_to_binary(decimal // 2)
+    print(decimal % 2, end='')
+
+decimal_to_binary(10)  # Output: 1010
