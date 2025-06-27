@@ -1,0 +1,9 @@
+tuple1 = (1, 2, 3, 4)
+tuple2 = (1, 2, 3)
+
+if len(tuple1) != len(tuple2):
+    print("Tuples are different (length differs)")  # This will print
+elif tuple1 != tuple2:
+    print("Tuples are different (same length but elements differ)")
+else:
+    print("Tuples are identical")
