@@ -1,0 +1,19 @@
+def reverse_words(s):
+    words = []
+    current_word = []
+    
+    for char in s:
+        if char == ' ':
+            if current_word:
+                words.append(''.join(current_word))
+                current_word = []
+        else:
+            current_word.append(char)
+    
+    if current_word:
+        words.append(''.join(current_word))
+    
+    return ' '.join(reversed(words))
+
+s = "hello world python"
+print(reverse_words(s))  # Output: "python world hello"
