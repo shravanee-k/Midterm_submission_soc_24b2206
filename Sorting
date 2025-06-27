@@ -1,0 +1,11 @@
+def custom_sort(arr):
+    sorted_arr = np.empty_like(arr)
+    temp_arr = arr.copy()
+    for i in range(len(arr)):
+        min_val = np.min(temp_arr)
+        sorted_arr[i] = min_val
+        temp_arr = temp_arr[temp_arr != min_val]
+    return sorted_arr
+
+arr = np.array([3, 1, 4, 2, 5])
+print(custom_sort(arr))  # Output: [1 2 3 4 5]
